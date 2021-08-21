@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { TasksService } from 'src/app/services/tasks.service';
 
 @Component({
   selector: 'app-quote-container',
@@ -9,9 +10,12 @@ export class QuoteContainerComponent implements OnInit {
 
   @Input() count: number = 0
 
-  constructor() { }
+  tasks: string[] = []
+
+  constructor(private taskService: TasksService) { }
 
   ngOnInit(): void {
+    this.tasks = this.taskService.getTasks()
   }
 
   onAddCount(value: number) {
