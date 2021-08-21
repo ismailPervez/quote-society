@@ -1,0 +1,9 @@
+.quote {
+    width: 80%;
+    min-height: 100px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 2% 0;
+    padding: 3%;
+    box-shadow: 0 0 5px;
+}

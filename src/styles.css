@@ -21,3 +21,23 @@ h1, h2 {
 body {
     background-color: whitesmoke;
 }
+
+main {
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    padding: 2% 5%;
+}
+
+.btn {
+    min-width: 70px;
+    height: 35px;
+    border: none;
+    background-color: #ED2B33FF;
+    padding: 1% 2%;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-family: var(--text-font);
+    font-weight: bold;
+    cursor: pointer;
+}
